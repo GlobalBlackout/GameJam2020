@@ -36,13 +36,16 @@ public class PlayerMoviments : MonoBehaviour
     private void Move()
     {
         float inputType = Input.GetAxis("Horizontal");
+
         if (inputType != 0)      
             if (_rb.velocity.x < Speed * inputType)
                 _rb.velocity = new Vector2(MaxVelocity * inputType, _rb.velocity.y);
             else
                 _rb.AddForce(Vector2.left * Acceleration);      
         else
-            _rb.velocity = new Vector2(JetpackInertial * inputType, _rb.velocity.y);
+            _rb.velocity = new Vector2(PlayerInertial * inputType, _rb.velocity.y);
+
+        Debug.Log(_rb.velocity.x);
     }
 
     private void JatpackMovement()
