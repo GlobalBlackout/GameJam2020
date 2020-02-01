@@ -39,6 +39,12 @@ public class Bullet : MonoBehaviour
         SoundManager.PlayExplosion(AllExp[n]);
         SoundManager.StopAudioCLip();
 
+        if (collision.gameObject.tag == "Player_Brick")
+            Destroy(collision.gameObject);
+
+        if (collision.gameObject.tag == "Brick")
+            collision.gameObject.GetComponent<Brick>().DropOneLife();
+
         Destroy(this.gameObject);
     }
 

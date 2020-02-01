@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Portal : MonoBehaviour
 {
-
     public GameObject PortalToTP;
     public GameObject Player;
 
@@ -14,6 +13,14 @@ public class Portal : MonoBehaviour
         {
             float unitToAddPlayer = Player.transform.position.x > 0 ? 2 : -2;
             Player.transform.position = new Vector3(PortalToTP.transform.position.x + unitToAddPlayer, Player.transform.position.y, 0);
+        }
+        else if (collision.gameObject.tag != "Bullet")
+        {
+            if (collision.gameObject.tag == "Brick")
+                if (collision.gameObject.GetComponent<Brick>().BrickDed == false)
+                    GameManager.UpdateBrickStatus();
+
+            Destroy(collision.gameObject);
         }
     }
 }

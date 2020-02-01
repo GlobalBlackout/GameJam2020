@@ -5,7 +5,9 @@ using UnityEngine;
 public class BulletShooter : MonoBehaviour
 {
     public GameObject BulletPrefab;
-    public float TimeBetweenShoot = 10;
+    [Header("Shooter")]
+    [Range(0, 10)]
+    public float TimeBetweenShoot = 1;
 
     private float TimeLeft;
     private float _sphereRadius;
