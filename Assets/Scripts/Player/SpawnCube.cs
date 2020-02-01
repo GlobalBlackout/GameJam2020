@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpawnCube : MonoBehaviour
 {
     public GameObject Cube;
+    public SpriteRenderer PlayerRange;
 
     [Header("Spawn Brick")]
     [Range(1, 5)]
@@ -19,6 +20,7 @@ public class SpawnCube : MonoBehaviour
     private void Start()
     {
         _timeLeft = DelaySpawn;
+        PlayerRange.transform.localScale = new Vector3(DistanceSpawn * 2, DistanceSpawn * 2, 0);
     }
 
     void Update()
@@ -37,7 +39,6 @@ public class SpawnCube : MonoBehaviour
             if (_brickInStorage)
             {
                 _mosePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
                 if (Vector2.Distance(transform.position, _mosePosition) < DistanceSpawn)
                 {
                     Instantiate(Cube, new Vector3(_mosePosition.x, _mosePosition.y, 0), Quaternion.identity);

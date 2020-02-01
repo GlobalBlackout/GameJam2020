@@ -19,6 +19,7 @@ public class Brick : MonoBehaviour
                 if (collision.gameObject.GetComponent<Brick>().BrickDed == true)
                 {
                     GetComponent<SpriteRenderer>().color = Color.red;
+                    GameManager.UpdateBrickStatus();
                     BrickDed = true;
                 }
         }
