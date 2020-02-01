@@ -285,7 +285,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &375063730
 Transform:
   m_ObjectHideFlags: 0
@@ -644,7 +644,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &546070378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -902,6 +902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cube: {fileID: 3979826529462245657, guid: b1dc5ce9c62ddbb408e81a4963dbc2cc, type: 3}
+  DistanceSpawn: 3
 --- !u!114 &590441732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -915,10 +916,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 10
-  JetpackForce: 1
+  PlayerInertial: 3
   MaxVelocity: 10
   Acceleration: 50
-  RemaningForce: 3
+  JetpackInertial: 3
 --- !u!50 &590441733
 Rigidbody2D:
   serializedVersion: 4
@@ -964,7 +965,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
 --- !u!4 &590441735
 Transform:
@@ -1956,7 +1957,7 @@ Transform:
   m_GameObject: {fileID: 1049886531}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 590441735}
   m_RootOrder: 0
