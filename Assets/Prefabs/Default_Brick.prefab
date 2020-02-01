@@ -146,3 +146,5 @@ MonoBehaviour:
     type: 3}
   BrickDed: 0
   BrickLives: 3
+  BreakForce: 130
+  BreakTorque: 130

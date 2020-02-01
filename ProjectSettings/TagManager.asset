@@ -8,6 +8,8 @@ TagManager:
   - Ground
   - Brick
   - Player_Brick
+  - Grownd_Brick
+  - Minimap
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - 
   - Roof
   - Bullet
-  - 
+  - MiniMap
   - 
   - 
   - 

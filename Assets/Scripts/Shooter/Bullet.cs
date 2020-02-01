@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public GameObject WorningSignal;
+
     [Range(5, 10)]
     public float BombRange = 8;
+    [Range(100, 500)]
+    public float _bulletSpeed = 500;
 
     private Rigidbody2D _bulletRB;
     private float _startXPosition;
     private float _startYPosition;
 
-    private float _bulletSpeed = 500;
     void Start()
     {
         _startXPosition = transform.position.x;
@@ -25,7 +28,21 @@ public class Bullet : MonoBehaviour
     {
         Vector2 ShootingVector = GetDirectionForShooting();
 
+        PutAllert(ShootingVector);
+
         _bulletRB.AddForce(ShootingVector * _bulletSpeed);
+    }
+
+    private void PutAllert(Vector2 direction)
+    {
+        LayerMask mask = LayerMask.GetMask("MiniMap");
+
+        RaycastHit2D minimapHit = Physics2D.Raycast(transform.position, direction, Mathf.Infinity, mask);
+        if (minimapHit)
+        {
+            Destroy(GameObject.Find("WorningSign(Clone)"));
+            Instantiate(WorningSignal, new Vector3(minimapHit.point.x, minimapHit.point.y, 0), Quaternion.identity);
+        }
     }
 
     private Vector2 GetDirectionForShooting()

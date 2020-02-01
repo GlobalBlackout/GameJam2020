@@ -39,13 +39,18 @@ public class PlayerMoviments : MonoBehaviour
     {
         float inputType = Input.GetAxis("Horizontal");
 
-        PlayerSpriteRender.flipX = inputType > 0 ? true : false;
+        PlayerFlip(inputType);
 
         if (inputType != 0 || Mathf.Abs(_rb.velocity.x) > Speed)
+        {
             if (Mathf.Abs(_rb.velocity.x) < Speed)
                 _rb.velocity = new Vector2(MaxVelocity * inputType, _rb.velocity.y);
             else
                 _rb.AddForce(Vector2.left * Acceleration * inputType);
+
+            if (Mathf.Abs(_rb.velocity.x) > Speed)
+                _rb.velocity = new Vector2(MaxVelocity * inputType, _rb.velocity.y);
+        }
     }
 
     private void JatpackMovement()
@@ -59,5 +64,13 @@ public class PlayerMoviments : MonoBehaviour
                 _rb.AddForce(Vector2.up * Acceleration);
         else if(_rb.velocity.y > 0)
             _rb.velocity = new Vector2(_rb.velocity.x, JetpackInertial * inputType);
+    }
+
+    private void PlayerFlip(float inputType)
+    {
+        if(inputType > 0)
+            PlayerSpriteRender.flipX = true;
+        else if(inputType < 0)
+            PlayerSpriteRender.flipX = false;
     }
 }
