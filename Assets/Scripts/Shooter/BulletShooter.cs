@@ -6,25 +6,16 @@ public class BulletShooter : MonoBehaviour
 {
     public GameObject BulletPrefab;
     [Header("Shooter")]
-    [Range(0, 10)]
-    public float TimeBetweenShoot = 1;
+    [Range(1.5f, 10)]
+    public float TimeBetweenShoot = 1.5f;
 
     private float TimeLeft;
     private float _sphereRadius;
-
-    SoundManager riffs;
-
-    public AudioClip Riff1;
-    public AudioClip Riff2;
-
-    public int audioCount = 0;
-
 
     private void Start()
     {
         _sphereRadius = GetComponent<CircleCollider2D>().radius;
         TimeLeft = TimeBetweenShoot;
-        riffs = GameObject.Find("SoundManager").GetComponent<SoundManager>();
     }
 
     void Update()
@@ -46,10 +37,7 @@ public class BulletShooter : MonoBehaviour
     {
         Vector3 positionToSpown = GetPositionToSpawn();
         Instantiate(BulletPrefab, positionToSpown, Quaternion.identity);
-        PlayOneRiff();
-
-
-
+        FindObjectOfType<SoundManager>().PlayOneRiff();
     }
 
     private Vector3 GetPositionToSpawn()
@@ -63,22 +51,4 @@ public class BulletShooter : MonoBehaviour
     {
         return Mathf.Sqrt(Mathf.Pow(_sphereRadius, 2) - Mathf.Pow(x, 2)) + transform.position.y;
     }
-
-    private void PlayOneRiff()
-    {
-        if (audioCount < 2)
-        {
-            SoundManager.PlayRiff1(Riff1);
-            audioCount += 1;
-        }
-
-        else
-        {
-            SoundManager.PlayRiff2(Riff2);
-            audioCount = 0;
-        }
-    }
-
-
-
 }

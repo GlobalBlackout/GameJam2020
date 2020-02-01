@@ -6,10 +6,9 @@ public class SoundManager : MonoBehaviour
 {
     public AudioClip Riff1;
     public AudioClip Riff2;
-    public AudioClip Explosion;
     public AudioClip SoundTrack;
     public AudioClip SteelCraft;
-
+    public AudioClip[] AllExp;
 
     private  AudioSource Riff1Source;
     private  AudioSource Riff2Source;
@@ -17,6 +16,7 @@ public class SoundManager : MonoBehaviour
     private  AudioSource SoundTrackSource;
     private  AudioSource SteelCraftSource;
 
+    private int audioCount = 0;
 
     public void Start()
     {
@@ -28,25 +28,28 @@ public class SoundManager : MonoBehaviour
         SoundTrackSource = audioSources[3];
         SteelCraftSource = audioSources[4];
 
-        PlaySoundTrack(SoundTrack);
+        PlaySoundTrack();
     }
-    public void PlayRiff1(AudioClip clip)
+    public void PlayRiff1()
     {
-        Riff1Source.PlayOneShot(clip);
-    }
-
-    public void PlayRiff2(AudioClip clip)
-    {
-        Riff2Source.PlayOneShot(clip);
-    }
-    public void PlaySoundTrack(AudioClip clip)
-    {
-        SoundTrackSource.PlayOneShot(clip);
+        Riff1Source.PlayOneShot(Riff1);
     }
 
-    public void PlayExplosion(AudioClip clip)
+    public void PlayRiff2()
     {
-        ExplosionSource.PlayOneShot(clip);
+        Riff2Source.PlayOneShot(Riff2);
+    }
+    public void PlaySoundTrack()
+    {
+        SoundTrackSource.PlayOneShot(SoundTrack);
+    }
+
+    public void PlayExplosion()
+    {
+        StopAudioCLip();
+
+        int n = Random.Range(0, AllExp.Length);
+        ExplosionSource.PlayOneShot(AllExp[n]);
     }
 
     public void PlaySteelCraft()
@@ -60,5 +63,17 @@ public class SoundManager : MonoBehaviour
         Riff2Source.Stop();
     }
 
-
+    public void PlayOneRiff()
+    {
+        if (audioCount < 2)
+        {
+            FindObjectOfType<SoundManager>().PlayRiff1();
+            audioCount += 1;
+        }
+        else
+        {
+            FindObjectOfType<SoundManager>().PlayRiff2();
+            audioCount = 0;
+        }
+    }
 }

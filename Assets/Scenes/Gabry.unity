@@ -161,7 +161,7 @@ PrefabInstance:
     - target: {fileID: 2036779103362867423, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
       propertyPath: m_Name
-      value: Default_Brick (9)
+      value: Default_Brick 24
       objectReference: {fileID: 0}
     - target: {fileID: 2036779104543637241, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
@@ -559,7 +559,7 @@ PrefabInstance:
     - target: {fileID: 2036779103362867423, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
       propertyPath: m_Name
-      value: Default_Brick (22)
+      value: Default_Brick 45
       objectReference: {fileID: 0}
     - target: {fileID: 2036779104543637241, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
@@ -800,6 +800,11 @@ PrefabInstance:
       propertyPath: m_Simulated
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2809092068372029690, guid: 04f6f61aae41ab74eb23cd7849fd5edf,
+        type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2809092068372029691, guid: 04f6f61aae41ab74eb23cd7849fd5edf,
         type: 3}
       propertyPath: m_Name
@@ -854,7 +859,7 @@ PrefabInstance:
     - target: {fileID: 2036779103362867423, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
       propertyPath: m_Name
-      value: Default_Brick (21)
+      value: Default_Brick 44
       objectReference: {fileID: 0}
     - target: {fileID: 2036779104543637241, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
@@ -960,7 +965,7 @@ PrefabInstance:
     - target: {fileID: 2036779103362867423, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
       propertyPath: m_Name
-      value: Default_Brick (16)
+      value: Default_Brick 35
       objectReference: {fileID: 0}
     - target: {fileID: 2036779104543637241, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
@@ -1061,7 +1066,6 @@ MonoBehaviour:
   PlayerRange: {fileID: 828328471}
   DistanceSpawn: 2.95
   DelaySpawn: 1.01
-  SteelCraft: {fileID: 8300000, guid: c5da7fe26a39b3d4eaed0e05293d3204, type: 3}
 --- !u!114 &302853270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1235,10 +1239,15 @@ PrefabInstance:
       propertyPath: m_Simulated
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2809092068372029690, guid: 04f6f61aae41ab74eb23cd7849fd5edf,
+        type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2809092068372029691, guid: 04f6f61aae41ab74eb23cd7849fd5edf,
         type: 3}
       propertyPath: m_Name
-      value: Base_Brick (1)
+      value: Base_Brick 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04f6f61aae41ab74eb23cd7849fd5edf, type: 3}
@@ -1441,7 +1450,7 @@ PrefabInstance:
     - target: {fileID: 2036779103362867423, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
       propertyPath: m_Name
-      value: Default_Brick (15)
+      value: Default_Brick 34
       objectReference: {fileID: 0}
     - target: {fileID: 2036779104543637241, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
@@ -1644,10 +1653,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BulletPrefab: {fileID: 696489882143878027, guid: 3785d10b08cd4374fba21c71ca4b4329,
     type: 3}
-  TimeBetweenShoot: 1
-  Riff1: {fileID: 0}
-  Riff2: {fileID: 0}
-  audioCount: 0
+  TimeBetweenShoot: 1.5
 --- !u!58 &692188685
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1714,9 +1720,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Riff1: {fileID: 8300000, guid: 40e70d894e4398b4bb9b90bc2058a332, type: 3}
   Riff2: {fileID: 8300000, guid: 5876fb9fe0267b64890cb543dd200f48, type: 3}
-  Explosion: {fileID: 8300000, guid: cb7e8826b8572d54185a256efc7b04e4, type: 3}
   SoundTrack: {fileID: 8300000, guid: 19a92531a5e72184e9f2c759a4f34b8d, type: 3}
   SteelCraft: {fileID: 8300000, guid: c5da7fe26a39b3d4eaed0e05293d3204, type: 3}
+  AllExp:
+  - {fileID: 8300000, guid: 943b83ca2548bf24ca91e2a3a3632f9e, type: 3}
+  - {fileID: 8300000, guid: 66b60987ba604fb4eb384db895499f57, type: 3}
+  - {fileID: 8300000, guid: 6c91ec0a19289dd489a8cd72e990661b, type: 3}
+  - {fileID: 8300000, guid: 87d5422a9b86db64dbe683b1a2105db1, type: 3}
+  - {fileID: 8300000, guid: 24f130888bbde54408f020bed106a8c1, type: 3}
+  - {fileID: 8300000, guid: 87fd8fe65e5e7d44c9ef6045104b6520, type: 3}
+  - {fileID: 8300000, guid: cb7e8826b8572d54185a256efc7b04e4, type: 3}
 --- !u!82 &783178117
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2111,7 +2124,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 40e70d894e4398b4bb9b90bc2058a332, type: 3}
+  m_audioClip: {fileID: 8300000, guid: cb7e8826b8572d54185a256efc7b04e4, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2252,7 +2265,7 @@ PrefabInstance:
     - target: {fileID: 2036779103362867423, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
       propertyPath: m_Name
-      value: Default_Brick (8)
+      value: Default_Brick 23
       objectReference: {fileID: 0}
     - target: {fileID: 2036779104543637241, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
@@ -2544,7 +2557,7 @@ PrefabInstance:
     - target: {fileID: 2036779103362867423, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
       propertyPath: m_Name
-      value: Default_Brick (13)
+      value: Default_Brick 32
       objectReference: {fileID: 0}
     - target: {fileID: 2036779104543637241, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
@@ -2689,7 +2702,7 @@ PrefabInstance:
     - target: {fileID: 2036779103362867423, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
       propertyPath: m_Name
-      value: Default_Brick (6)
+      value: Default_Brick 21
       objectReference: {fileID: 0}
     - target: {fileID: 2036779104543637241, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
@@ -2795,7 +2808,7 @@ PrefabInstance:
     - target: {fileID: 2036779103362867423, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
       propertyPath: m_Name
-      value: Default_Brick (19)
+      value: Default_Brick 42
       objectReference: {fileID: 0}
     - target: {fileID: 2036779104543637241, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
@@ -2901,7 +2914,7 @@ PrefabInstance:
     - target: {fileID: 2036779103362867423, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
       propertyPath: m_Name
-      value: Default_Brick (14)
+      value: Default_Brick 33
       objectReference: {fileID: 0}
     - target: {fileID: 2036779104543637241, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
@@ -3217,7 +3230,7 @@ PrefabInstance:
     - target: {fileID: 2036779103362867423, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
       propertyPath: m_Name
-      value: Default_Brick (10)
+      value: Default_Brick 25
       objectReference: {fileID: 0}
     - target: {fileID: 2036779104543637241, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
@@ -3461,7 +3474,7 @@ PrefabInstance:
     - target: {fileID: 2036779103362867423, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
       propertyPath: m_Name
-      value: Default_Brick (12)
+      value: Default_Brick 31
       objectReference: {fileID: 0}
     - target: {fileID: 2036779104543637241, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
@@ -3619,6 +3632,11 @@ PrefabInstance:
       propertyPath: m_Simulated
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2809092068372029690, guid: 04f6f61aae41ab74eb23cd7849fd5edf,
+        type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2809092068372029691, guid: 04f6f61aae41ab74eb23cd7849fd5edf,
         type: 3}
       propertyPath: m_Name
@@ -3673,7 +3691,7 @@ PrefabInstance:
     - target: {fileID: 2036779103362867423, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
       propertyPath: m_Name
-      value: Default_Brick (7)
+      value: Default_Brick 22
       objectReference: {fileID: 0}
     - target: {fileID: 2036779104543637241, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
@@ -3937,10 +3955,15 @@ PrefabInstance:
       propertyPath: m_Simulated
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2809092068372029690, guid: 04f6f61aae41ab74eb23cd7849fd5edf,
+        type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2809092068372029691, guid: 04f6f61aae41ab74eb23cd7849fd5edf,
         type: 3}
       propertyPath: m_Name
-      value: Base_Brick
+      value: Base_Brick 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04f6f61aae41ab74eb23cd7849fd5edf, type: 3}
@@ -4220,6 +4243,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Simulated
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2809092068372029690, guid: 04f6f61aae41ab74eb23cd7849fd5edf,
+        type: 3}
+      propertyPath: m_Mass
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2809092068372029691, guid: 04f6f61aae41ab74eb23cd7849fd5edf,
         type: 3}
@@ -4593,7 +4621,7 @@ PrefabInstance:
     - target: {fileID: 2036779103362867423, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
       propertyPath: m_Name
-      value: Default_Brick (18)
+      value: Default_Brick 41
       objectReference: {fileID: 0}
     - target: {fileID: 2036779104543637241, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
@@ -4756,7 +4784,7 @@ PrefabInstance:
     - target: {fileID: 2036779103362867423, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
       propertyPath: m_Name
-      value: Default_Brick (20)
+      value: Default_Brick 43
       objectReference: {fileID: 0}
     - target: {fileID: 2036779104543637241, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
