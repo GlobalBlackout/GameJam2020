@@ -14,7 +14,7 @@ public class SpawnCube : MonoBehaviour
     public float DelaySpawn = 3;
 
     private Vector2 _mosePosition;
-    public AudioClip SteelCraft;
+    //public AudioClip SteelCraft;
     private float _timeLeft;
     private bool _brickInStorage = true;
 
@@ -39,11 +39,10 @@ public class SpawnCube : MonoBehaviour
         {
             if (_brickInStorage)
             {
-                Instantiate(Cube, new Vector3(_mosePosition.x, _mosePosition.y, -5), Quaternion.identity);
-                SoundManager.PlaySteelCraft(SteelCraft);
                 _mosePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 if (Vector2.Distance(transform.position, _mosePosition) < DistanceSpawn)
                 {
+                    FindObjectOfType<SoundManager>().PlaySteelCraft();
                     Instantiate(Cube, new Vector3(_mosePosition.x, _mosePosition.y, 0), Quaternion.identity);
                     _brickInStorage = false;
                 }
