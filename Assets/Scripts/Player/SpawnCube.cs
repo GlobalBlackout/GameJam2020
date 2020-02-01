@@ -9,19 +9,51 @@ public class SpawnCube : MonoBehaviour
     [Header("Spawn Brick")]
     [Range(1, 5)]
     public float DistanceSpawn = 3;
+    [Range(0, 5)]
+    public float DelaySpawn = 3;
 
     private Vector2 _mosePosition;
+    private float _timeLeft;
+    private bool _brickInStorage = true;
+
+    private void Start()
+    {
+        _timeLeft = DelaySpawn;
+    }
 
     void Update()
     {
+        if(!_brickInStorage)
+            TimerForPlaceBrick();
+
+        if (_brickInStorage)
+            SpawnBrick();
+    }
+
+    private void SpawnBrick()
+    {
         if (Input.GetMouseButtonDown(0))
         {
-            _mosePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-            if (Vector2.Distance(transform.position, _mosePosition) < DistanceSpawn)
+            if (_brickInStorage)
             {
-                Instantiate(Cube, new Vector3(_mosePosition.x, _mosePosition.y, 0), Quaternion.identity);
+                _mosePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+                if (Vector2.Distance(transform.position, _mosePosition) < DistanceSpawn)
+                {
+                    Instantiate(Cube, new Vector3(_mosePosition.x, _mosePosition.y, 0), Quaternion.identity);
+                    _brickInStorage = false;
+                }
             }
+        }
+    }
+
+    private void TimerForPlaceBrick()
+    {
+        _timeLeft -= Time.deltaTime;
+        if (_timeLeft < 0)
+        {
+            _brickInStorage = true;
+            _timeLeft = DelaySpawn;
         }
     }
 }
