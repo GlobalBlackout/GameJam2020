@@ -132,4 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3ce70936143b254f8ec3cfca1a4f93d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WorningSignal: {fileID: 6142288448759891237, guid: 2c8e0cb9485ebfa4493131ccc8797f12,
+    type: 3}
   BombRange: 5.8
+  _bulletSpeed: 255
