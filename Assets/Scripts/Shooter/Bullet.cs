@@ -8,6 +8,8 @@ public class Bullet : MonoBehaviour
     private float _startXPosition;
     private float _startYPosition;
 
+    public AudioClip[] AllExp;
+
     private float _bulletSpeed = 500;
     void Start()
     {
@@ -32,6 +34,12 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        int n = Random.Range(0, AllExp.Length);
+
+        SoundManager.PlayExplosion(AllExp[n]);
+        SoundManager.StopAudioCLip();
+
         Destroy(this.gameObject);
     }
+
 }

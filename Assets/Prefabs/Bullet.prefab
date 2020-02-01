@@ -132,3 +132,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3ce70936143b254f8ec3cfca1a4f93d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Explosion0: {fileID: 8300000, guid: cb7e8826b8572d54185a256efc7b04e4, type: 3}
+  Explosion1: {fileID: 8300000, guid: 943b83ca2548bf24ca91e2a3a3632f9e, type: 3}
+  Explosion2: {fileID: 8300000, guid: 66b60987ba604fb4eb384db895499f57, type: 3}
+  Explosion3: {fileID: 8300000, guid: 6c91ec0a19289dd489a8cd72e990661b, type: 3}
+  Explosion4: {fileID: 8300000, guid: 87d5422a9b86db64dbe683b1a2105db1, type: 3}
+  Explosion5: {fileID: 8300000, guid: 24f130888bbde54408f020bed106a8c1, type: 3}
+  Explosion6: {fileID: 8300000, guid: 87fd8fe65e5e7d44c9ef6045104b6520, type: 3}
+  AllExp:
+  - {fileID: 8300000, guid: cb7e8826b8572d54185a256efc7b04e4, type: 3}
+  - {fileID: 8300000, guid: 943b83ca2548bf24ca91e2a3a3632f9e, type: 3}
+  - {fileID: 8300000, guid: 66b60987ba604fb4eb384db895499f57, type: 3}
+  - {fileID: 8300000, guid: 6c91ec0a19289dd489a8cd72e990661b, type: 3}
+  - {fileID: 8300000, guid: 87d5422a9b86db64dbe683b1a2105db1, type: 3}
+  - {fileID: 8300000, guid: 24f130888bbde54408f020bed106a8c1, type: 3}
+  - {fileID: 8300000, guid: 87fd8fe65e5e7d44c9ef6045104b6520, type: 3}

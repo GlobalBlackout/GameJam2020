@@ -7,6 +7,7 @@ public class SpawnCube : MonoBehaviour
     public GameObject Cube;
 
     private Vector2 _mosePosition;
+    public AudioClip SteelCraft;
 
     void Update()
     {
@@ -17,6 +18,7 @@ public class SpawnCube : MonoBehaviour
             if (Vector2.Distance(transform.position, _mosePosition) < 3f)
             {
                 Instantiate(Cube, new Vector3(_mosePosition.x, _mosePosition.y, -5), Quaternion.identity);
+                SoundManager.PlaySteelCraft(SteelCraft);
             }
         }
     }
