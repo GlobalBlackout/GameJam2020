@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public GameObject Target;
-
     private Rigidbody2D _bulletRB;
     private float _startXPosition;
     private float _startYPosition;
@@ -29,7 +27,7 @@ public class Bullet : MonoBehaviour
 
     private Vector2 GetDirectionForShooting()
     {
-        return new Vector2(Target.transform.position.x - _startXPosition, Target.transform.position.y - _startYPosition);
+        return new Vector2(Random.Range(-10, 10) - _startXPosition, -_startYPosition);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
