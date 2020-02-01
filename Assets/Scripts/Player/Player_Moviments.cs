@@ -37,7 +37,6 @@ public class Player_Moviments : MonoBehaviour
 
         if (Input.GetKey(KeyCode.D))     
             transform.Translate(Vector2.right * Speed * Time.deltaTime);
-        
     }
 
     private void JatpackMovement()
