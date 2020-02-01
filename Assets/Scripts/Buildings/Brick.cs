@@ -14,9 +14,12 @@ public class Brick : MonoBehaviour
     [Range(0, 250)]
     public float BreakTorque = 15;
 
+    private int _brickLives;
+
     private void Start()
     {
         GetNearBricks();
+        _brickLives = BrickLives;
     }
 
     private void GetNearBricks()
@@ -42,24 +45,21 @@ public class Brick : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!BrickDed)
+        if (collision.gameObject.tag == "Ground")
         {
-            if (collision.gameObject.tag == "Ground")
-            {
-                GameManager.UpdateBrickStatus();
-                BrickDed = true;
-                Destroy(gameObject);
-            }
+            GameManager.UpdateBrickStatus();
+            BrickDed = true;
+            Destroy(gameObject);
         }
     }
 
     public void DropOneLife()
     {
-        BrickLives -= 1;
-        if (BrickLives <= 0)
+        _brickLives -= 1;
+        if (_brickLives <= 0)
             Destroy(gameObject);
         
-        if(BrickLives == 2)
+        if(_brickLives == BrickLives - 1)
         {
             Instantiate(CrackTexturePrefab, transform);
             return;

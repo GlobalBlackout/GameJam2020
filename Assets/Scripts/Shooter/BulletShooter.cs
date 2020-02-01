@@ -6,8 +6,8 @@ public class BulletShooter : MonoBehaviour
 {
     public GameObject BulletPrefab;
     [Header("Shooter")]
-    [Range(1.5f, 10)]
-    public float TimeBetweenShoot = 1.5f;
+    //[Range(1.5f, 10)]
+    public float TimeBetweenShoot = .1f;
 
     private float TimeLeft;
     private float _sphereRadius;

@@ -23,16 +23,21 @@ public class PlayerMoviments : MonoBehaviour
     public SpriteRenderer PlayerSpriteRender;
 
     private Rigidbody2D _rb;
+    private PleyerEvents _pe;
 
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
+        _pe = GetComponent<PleyerEvents>();
     }
 
     private void FixedUpdate()
     {
-        JatpackMovement();
-        Move();
+        if (!_pe.Stunned)
+        {
+            JatpackMovement();
+            Move();
+        }
     }
 
     private void Move()

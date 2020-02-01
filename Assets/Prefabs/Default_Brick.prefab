@@ -145,6 +145,6 @@ MonoBehaviour:
   CrackTexturePrefab: {fileID: 3062219565319393102, guid: c98fde7fdf67d4d4f80e867dcbc25fee,
     type: 3}
   BrickDed: 0
-  BrickLives: 3
+  BrickLives: 2
   BreakForce: 130
   BreakTorque: 130
