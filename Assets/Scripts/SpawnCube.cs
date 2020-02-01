@@ -19,7 +19,7 @@ public class SpawnCube : MonoBehaviour
 
             if (Vector2.Distance(playerPosition, mousePosition) < 3f)
             {
-                Instantiate(Cube, new Vector2(target.x, target.y), Quaternion.identity);
+                Instantiate(Cube, new Vector3(target.x, target.y, -5), Quaternion.identity);
             }
 
             
