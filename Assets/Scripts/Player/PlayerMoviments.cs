@@ -20,6 +20,8 @@ public class PlayerMoviments : MonoBehaviour
     [Range(0, 5)]
     public float JetpackInertial = 3;
 
+    public SpriteRenderer PlayerSpriteRender;
+
     private Rigidbody2D _rb;
 
     void Start()
@@ -36,18 +38,20 @@ public class PlayerMoviments : MonoBehaviour
     private void Move()
     {
         float inputType = Input.GetAxis("Horizontal");
-      
-         if (inputType != 0)
+
+        PlayerSpriteRender.flipX = inputType > 0 ? true : false;
+
+        if (inputType != 0 || Mathf.Abs(_rb.velocity.x) > Speed)
             if (Mathf.Abs(_rb.velocity.x) < Speed)
                 _rb.velocity = new Vector2(MaxVelocity * inputType, _rb.velocity.y);
             else
                 _rb.AddForce(Vector2.left * Acceleration * inputType);
-       
     }
 
     private void JatpackMovement()
     {
         float inputType = Input.GetAxis("Vertical");
+
         if (inputType != 0)
             if (_rb.velocity.y > MaxVelocity * inputType)
                 _rb.velocity = new Vector2(_rb.velocity.x, MaxVelocity * inputType);

@@ -142,5 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4ce5317a9bcede478dd7e352c0adfd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CrackTexturePrefab: {fileID: 3062219565319393102, guid: c98fde7fdf67d4d4f80e867dcbc25fee,
+    type: 3}
   BrickDed: 0
   BrickLives: 3
