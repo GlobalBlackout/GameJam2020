@@ -12,19 +12,19 @@ public class Brick : MonoBehaviour
         {
             if (collision.gameObject.tag == "Ground")
             {
-                GetComponent<SpriteRenderer>().color = Color.red;
+                //GetComponent<SpriteRenderer>().color = Color.red;
                 GameManager.UpdateBrickStatus();
                 BrickDed = true;
-                // Destroy(this.gameObject);
+                Destroy(this.gameObject);
             }
 
-            if (collision.gameObject.tag == "Brick")
-                if (collision.gameObject.GetComponent<Brick>().BrickDed == true)
-                {
-                    GetComponent<SpriteRenderer>().color = Color.red;
-                    GameManager.UpdateBrickStatus();
-                    BrickDed = true;
-                }
+            //if (collision.gameObject.tag == "Brick")
+            //    if (collision.gameObject.GetComponent<Brick>().BrickDed == true)
+            //    {
+            //        GetComponent<SpriteRenderer>().color = Color.red;
+            //        GameManager.UpdateBrickStatus();
+            //        BrickDed = true;
+            //    }
         }
     }
 

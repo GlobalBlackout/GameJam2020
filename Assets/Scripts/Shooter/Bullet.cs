@@ -35,8 +35,8 @@ public class Bullet : MonoBehaviour
         if (collision.gameObject.tag == "Player_Brick")
             Destroy(collision.gameObject);
 
-        // if (collision.gameObject.tag == "Brick")
-        //     collision.gameObject.GetComponent<Brick>().DropOneLife();
+        if (collision.gameObject.tag == "Brick")
+            collision.gameObject.GetComponent<Brick>().DropOneLife();
 
         Destroy(this.gameObject);
     }

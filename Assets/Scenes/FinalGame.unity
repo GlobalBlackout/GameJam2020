@@ -926,7 +926,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &546070378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1206,7 +1206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cube: {fileID: 3979826529462245657, guid: b1dc5ce9c62ddbb408e81a4963dbc2cc, type: 3}
   PlayerRange: {fileID: 1693708564}
-  DistanceSpawn: 3.66
+  DistanceSpawn: 1.56
   DelaySpawn: 1.01
 --- !u!114 &590441732
 MonoBehaviour:
@@ -2605,6 +2605,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -8192461887420448491, guid: cb7e5dbc9fdb42a4289a7abb9253a84f,
         type: 3}
+    - target: {fileID: 2036779103362867360, guid: 14538e40d5e513e4fa4a9253ec5175c7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2036779103362867422, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
       propertyPath: m_BodyType
