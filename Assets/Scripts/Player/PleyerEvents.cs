@@ -10,6 +10,24 @@ public class PleyerEvents : MonoBehaviour
 
     private static float _timeTowin;
 
+    public Animator anim;
+    public GameObject go;
+
+    private void Start()
+    {
+        anim = go.GetComponent<Animator>();
+    }
+
+    public void StunAnim()
+    {
+        anim.SetBool("Stunned", true);
+    }
+
+    public void IdleAnim()
+    {
+        anim.SetBool("Stunned", false);
+    }
+
     private void Update()
     {
         if (Stunned)
@@ -21,6 +39,8 @@ public class PleyerEvents : MonoBehaviour
         if(collision.gameObject.tag == "Bullet" && !Stunned)
         {
             Stunned = true;
+            StunAnim();
+
         }
     }
 
@@ -31,6 +51,9 @@ public class PleyerEvents : MonoBehaviour
         {
             _timeTowin = TimeStunn;
             Stunned = false;
+            IdleAnim();
+
+
         }
     }
 }

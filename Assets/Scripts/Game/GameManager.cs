@@ -34,6 +34,9 @@ public class GameManager : MonoBehaviour
     private static void Win()
     {
         SceneManager.LoadScene("WinScene");
+
+
+
     }
 
     private static void TimerForShoot()
