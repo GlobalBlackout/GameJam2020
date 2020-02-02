@@ -5,7 +5,7 @@ using UnityEngine;
 public class Brick : MonoBehaviour
 {
     public GameObject CrackTexturePrefab;
-    public bool BrickDed = false;
+    public GameObject MaceriePref;
     
     [Range(1, 3)]
     public int BrickLives = 3;
@@ -15,11 +15,13 @@ public class Brick : MonoBehaviour
     public float BreakTorque = 15;
 
     private int _brickLives;
+    private ParticleSystem _ps;
 
     private void Start()
     {
         GetNearBricks();
         _brickLives = BrickLives;
+        _ps = GameObject.Find("ParBrick").GetComponent<ParticleSystem>();
     }
 
     private void GetNearBricks()
@@ -48,7 +50,9 @@ public class Brick : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
         {
             GameManager.UpdateBrickStatus();
-            BrickDed = true;
+            Instantiate(MaceriePref, new Vector3(gameObject.transform.position.x, MaceriePref.transform.position.y, 0), Quaternion.identity);
+            _ps.transform.position = gameObject.transform.position;
+            _ps.Play();
             Destroy(gameObject);
         }
     }
@@ -57,7 +61,11 @@ public class Brick : MonoBehaviour
     {
         _brickLives -= 1;
         if (_brickLives <= 0)
+        {
+            _ps.transform.position = gameObject.transform.position;
+            _ps.Play();
             Destroy(gameObject);
+        }
         
         if(_brickLives == BrickLives - 1)
         {

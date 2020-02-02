@@ -144,7 +144,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CrackTexturePrefab: {fileID: 3062219565319393102, guid: c98fde7fdf67d4d4f80e867dcbc25fee,
     type: 3}
-  BrickDed: 0
+  MaceriePref: {fileID: 184614761324642039, guid: e5f6a94aa616d4e4e944c6a985b329ff,
+    type: 3}
   BrickLives: 2
   BreakForce: 130
   BreakTorque: 130

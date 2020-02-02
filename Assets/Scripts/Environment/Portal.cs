@@ -17,7 +17,6 @@ public class Portal : MonoBehaviour
         else if (collision.gameObject.tag != "Bullet")
         {
             if (collision.gameObject.tag == "Brick")
-                if (collision.gameObject.GetComponent<Brick>().BrickDed == false)
                     GameManager.UpdateBrickStatus();
 
             Destroy(collision.gameObject);
