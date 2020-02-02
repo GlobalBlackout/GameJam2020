@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public GameObject WorningSignal;
+    public GameObject WarningSignal;
 
     [Range(5, 10)]
     public float BombRange = 8;
@@ -46,7 +46,7 @@ public class Bullet : MonoBehaviour
         if (minimapHit)
         {
             Destroy(GameObject.Find("WorningSign(Clone)"));
-            Instantiate(WorningSignal, new Vector3(minimapHit.point.x, minimapHit.point.y, 0), Quaternion.identity);
+            Instantiate(WarningSignal, new Vector3(minimapHit.point.x, minimapHit.point.y, 0), Quaternion.identity);
         }
     }
 
