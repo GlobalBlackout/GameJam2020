@@ -30,6 +30,9 @@ public class Bullet : MonoBehaviour
 
         PutAllert(ShootingVector);
 
+        float angle = Mathf.Atan2(ShootingVector.y, ShootingVector.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
         _bulletRB.AddForce(ShootingVector * _bulletSpeed);
     }
 
