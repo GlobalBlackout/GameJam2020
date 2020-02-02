@@ -22,7 +22,7 @@ public class StartMenu : MonoBehaviour
 
     private void StartOnClick()
     {
-        SceneManager.LoadScene("FinalGame");
+        SceneManager.LoadScene("Level 1");
     }
 
     private void QuitOnClick()

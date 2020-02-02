@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public int BrickToLoose = 10;
     public float TimeTowin = 60;
 
+
     private static int _brickToLoose;
     public static float _timeTowin;
 
@@ -39,7 +40,7 @@ public class GameManager : MonoBehaviour
     private static void TimerForShoot()
     {
         _timeTowin -= Time.deltaTime;
-        if (_timeTowin < 0)
+        if (_timeTowin < 50)
         {
             Win();
         }
