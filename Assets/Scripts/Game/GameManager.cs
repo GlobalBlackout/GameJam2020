@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
     {
         // Richiamo una schermata di vittoria
         Debug.Log("Win");
+        SceneManager.LoadScene("WinScene");
     }
 
     private static void TimerForShoot()

@@ -7,16 +7,26 @@ using UnityEngine.UI;
 public class StartMenu : MonoBehaviour
 {
 	// Start is called before the first frame update
-	public Button yourButton;
+	public Button StartBtn;
+    public Button QuitBtn;
 
-	void Start()
-	{
-		Button btn = yourButton.GetComponent<Button>();
-		btn.onClick.AddListener(TaskOnClick);
-	}
+    void Start()
+    {
+        StartBtn = StartBtn.GetComponent<Button>();
+        StartBtn.onClick.AddListener(StartOnClick);
 
-	void TaskOnClick()
-	{
-		SceneManager.LoadScene("FinalGame");
-	}
+        QuitBtn = QuitBtn.GetComponent<Button>();
+        QuitBtn.onClick.AddListener(QuitOnClick);
+    }
+
+
+    private void StartOnClick()
+    {
+        SceneManager.LoadScene("FinalGame");
+    }
+
+    private void QuitOnClick()
+    {
+        SceneManager.LoadScene("StartMenu");
+    }
 }
