@@ -45,7 +45,7 @@ public class Bullet : MonoBehaviour
         RaycastHit2D minimapHit = Physics2D.Raycast(transform.position, direction, Mathf.Infinity, mask);
         if (minimapHit)
         {
-            Destroy(GameObject.Find("WorningSign(Clone)"));
+            Destroy(GameObject.Find("WarningSign(Clone)"));
             Instantiate(WarningSignal, new Vector3(minimapHit.point.x, minimapHit.point.y, 0), Quaternion.identity);
         }
     }

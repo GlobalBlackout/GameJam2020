@@ -6,36 +6,16 @@ using UnityEditor;
 
 public class LoadScene : MonoBehaviour
 {
-    // Start is called before the first frame update
-
-
-    public float timer = 0f;
+    public float Timer = 0f;
     public float LoadingTime = 3f;
 
-    
-
-    // Update is called once per frame
-    void Update()
+    public void Update()
     {
-        timer += Time.deltaTime;
-        float seconds = timer % 60;
+        Timer += Time.deltaTime;
 
-        Debug.Log(seconds);
-
-        
-
-        
-
-        if (seconds > LoadingTime)
+        if (Timer > LoadingTime)
         {
-            LevelLoad();
+            FindObjectOfType<LevelManager>().LevelLoad();
         }
-
-        
-    }
-
-     void LevelLoad()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
