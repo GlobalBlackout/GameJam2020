@@ -1048,6 +1048,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6550704174566262858, guid: 8b08be10ca82dc0458cc3050bfc9e3a1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b08be10ca82dc0458cc3050bfc9e3a1, type: 3}
 --- !u!1001 &319697625
@@ -6363,7 +6368,7 @@ PrefabInstance:
     - target: {fileID: 2036779104543637241, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.0200002
+      value: -1.64
       objectReference: {fileID: 0}
     - target: {fileID: 2036779104543637241, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
@@ -7425,7 +7430,7 @@ PrefabInstance:
     - target: {fileID: 2036779104543637241, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.020000458
+      value: -0.6400002
       objectReference: {fileID: 0}
     - target: {fileID: 2036779104543637241, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
@@ -7767,7 +7772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fbd7766d468f1648ba91b28aacea9f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BrickToLoose: 5
+  BrickToLoose: 10
   TimeTowin: 60
 --- !u!4 &1191136836
 Transform:

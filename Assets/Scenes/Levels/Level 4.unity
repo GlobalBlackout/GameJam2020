@@ -12547,7 +12547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fbd7766d468f1648ba91b28aacea9f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BrickToLoose: 5
+  BrickToLoose: 10
   TimeTowin: 60
 --- !u!4 &1505481969
 Transform:
