@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
 
 
     private static int _brickToLoose;
-    private static float _timeTowin;
+    public static float _timeTowin;
 
     private void Start()
     {
