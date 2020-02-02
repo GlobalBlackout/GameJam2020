@@ -30,7 +30,7 @@ public class PlayerMoviments : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
         _pe = GetComponent<PleyerEvents>();
     }
-
+    
     private void FixedUpdate()
     {
         if (!_pe.Stunned)
