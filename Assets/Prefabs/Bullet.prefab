@@ -118,6 +118,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WorningSignal: {fileID: 6142288448759891237, guid: 2c8e0cb9485ebfa4493131ccc8797f12,
     type: 3}
+  BulletParticles: {fileID: 7651074986186773302, guid: 0f7ba7396ccc4a84ebb9a02e3d5bca8f,
+    type: 3}
   BombRange: 5.8
   _bulletSpeed: 255
 --- !u!70 &3618873591612540806

@@ -11,6 +11,7 @@ public class Bullet : MonoBehaviour
     [Range(100, 500)]
     public float _bulletSpeed = 500;
 
+    private ParticleSystem BulletParticles;
     private Rigidbody2D _bulletRB;
     private float _startXPosition;
     private float _startYPosition;
@@ -20,6 +21,7 @@ public class Bullet : MonoBehaviour
         _startXPosition = transform.position.x;
         _startYPosition = transform.position.y;
         _bulletRB = GetComponent<Rigidbody2D>();
+        BulletParticles = GameObject.Find("BulletPar").GetComponent<ParticleSystem>();
 
         Shoot();
     }
@@ -63,6 +65,8 @@ public class Bullet : MonoBehaviour
         if (collision.gameObject.tag == "Brick")
             collision.gameObject.GetComponent<Brick>().DropOneLife();
 
+        BulletParticles.gameObject.transform.position = transform.position;
+        BulletParticles.Play();
         Destroy(gameObject);
     }
 
