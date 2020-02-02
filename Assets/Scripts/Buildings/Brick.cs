@@ -26,16 +26,19 @@ public class Brick : MonoBehaviour
 
     private void GetNearBricks()
     {
-        RaycastHit2D rightHit = Physics2D.Raycast(transform.position, Vector2.right);
+        RaycastHit2D rightHit = Physics2D.Raycast(transform.position, Vector2.right, 1);
         if (rightHit && (rightHit.collider.gameObject.tag == "Brick" || rightHit.collider.gameObject.tag == "Grownd_Brick"))
         {
             var Join = gameObject.AddComponent<HingeJoint2D>();
             Join.connectedBody = rightHit.collider.gameObject.GetComponent<Rigidbody2D>();
             Join.breakForce = BreakForce;
             Join.breakTorque = BreakTorque;
+            var limits = Join.limits;
+            limits.max = 90;
+            limits.min = -90;
         }
 
-        RaycastHit2D downHit = Physics2D.Raycast(transform.position, Vector2.down);
+        RaycastHit2D downHit = Physics2D.Raycast(transform.position, Vector2.down, 1);
         if (downHit && (downHit.collider.gameObject.tag == "Brick" || downHit.collider.gameObject.tag == "Grownd_Brick"))
         {
             var Join = gameObject.AddComponent<HingeJoint2D>();
