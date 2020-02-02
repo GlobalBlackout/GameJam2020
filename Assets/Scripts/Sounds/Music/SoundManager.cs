@@ -70,6 +70,12 @@ public class SoundManager : MonoBehaviour
             FindObjectOfType<SoundManager>().PlayRiff1();
             audioCount += 1;
         }
+        else if(audioCount == 2)
+        {
+            FindObjectOfType<SoundManager>().PlayRiff2();
+            audioCount += 1;
+        }
+
         else
         {
             FindObjectOfType<SoundManager>().PlayRiff2();

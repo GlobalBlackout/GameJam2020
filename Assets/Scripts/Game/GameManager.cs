@@ -46,8 +46,6 @@ public class GameManager : MonoBehaviour
 
     private static void GameOver()
     {
-        Debug.Log("Game over");
-        Scene scene = SceneManager.GetActiveScene(); 
-        SceneManager.LoadScene(scene.name);
+        SceneManager.LoadScene("GameOver");
     }
 }
