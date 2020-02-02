@@ -1048,6 +1048,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6550704174566262858, guid: 8b08be10ca82dc0458cc3050bfc9e3a1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b08be10ca82dc0458cc3050bfc9e3a1, type: 3}
 --- !u!1001 &319697625
@@ -6322,6 +6327,7 @@ AudioSource:
     - serializedVersion: 3
       time: 0
       value: 1
+<<<<<<< HEAD
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -6886,20 +6892,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Simulated
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2036779103362867423, guid: 14538e40d5e513e4fa4a9253ec5175c7,
-        type: 3}
-      propertyPath: m_Name
       value: Default_Brick 61
       objectReference: {fileID: 0}
     - target: {fileID: 2036779104543637241, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 2036779104543637241, guid: 14538e40d5e513e4fa4a9253ec5175c7,
-        type: 3}
-      propertyPath: m_LocalPosition.y
+      value: -1.64
       value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2036779104543637241, guid: 14538e40d5e513e4fa4a9253ec5175c7,
@@ -7627,7 +7625,7 @@ PrefabInstance:
     - target: {fileID: 2036779104543637241, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.020000458
+      value: -0.6400002
       objectReference: {fileID: 0}
     - target: {fileID: 2036779104543637241, guid: 14538e40d5e513e4fa4a9253ec5175c7,
         type: 3}
