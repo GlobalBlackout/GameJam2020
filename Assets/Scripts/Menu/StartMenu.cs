@@ -20,7 +20,7 @@ public class StartMenu : MonoBehaviour
 
     private void StartOnClick()
     {
-        SceneManager.LoadScene(FindObjectOfType<LevelManager>().LevelsName[0]);
+        SceneManager.LoadScene("Tutorial");
     }
 
     private void QuitOnClick()

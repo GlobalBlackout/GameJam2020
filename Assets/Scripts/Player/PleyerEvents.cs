@@ -16,6 +16,7 @@ public class PleyerEvents : MonoBehaviour
     private void Start()
     {
         anim = go.GetComponent<Animator>();
+        _timeTowin = TimeStunn;
     }
 
     public void StunAnim()
@@ -40,7 +41,6 @@ public class PleyerEvents : MonoBehaviour
         {
             Stunned = true;
             StunAnim();
-
         }
     }
 
@@ -52,8 +52,6 @@ public class PleyerEvents : MonoBehaviour
             _timeTowin = TimeStunn;
             Stunned = false;
             IdleAnim();
-
-
         }
     }
 }

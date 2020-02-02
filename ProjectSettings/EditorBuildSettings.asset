@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Level 5.unity
     guid: 463cb58a4c04d944981b7f23023ac4cd
   - enabled: 1
+    path: Assets/Scenes/Transiction/Tutorial.unity
+    guid: 96a778de1e1529d4c850e868ae3eb5ea
+  - enabled: 1
     path: Assets/Scenes/Transiction/GameOver.unity
     guid: ce653809f3c3f4e41915eccccc740db0
   - enabled: 1
