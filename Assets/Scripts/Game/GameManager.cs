@@ -35,12 +35,15 @@ public class GameManager : MonoBehaviour
         // Richiamo una schermata di vittoria
         Debug.Log("Win");
         SceneManager.LoadScene("WinScene");
+
+
+
     }
 
     private static void TimerForShoot()
     {
         _timeTowin -= Time.deltaTime;
-        if (_timeTowin < 50)
+        if (_timeTowin < 0)
         {
             Win();
         }
