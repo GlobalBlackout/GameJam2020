@@ -32,7 +32,6 @@ public class SoundManager : MonoBehaviour
     }
     public void PlayRiff1()
     {
-        Riff1Source.Stop();
         Riff2Source.Stop();
         Riff1Source.PlayOneShot(Riff1);
     }
@@ -40,7 +39,6 @@ public class SoundManager : MonoBehaviour
     public void PlayRiff2()
     {
         Riff1Source.Stop();
-        Riff2Source.Stop();
         Riff2Source.PlayOneShot(Riff2);
     }
     public void PlaySoundTrack()

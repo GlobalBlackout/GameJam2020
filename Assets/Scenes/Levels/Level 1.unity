@@ -220,8 +220,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5420824a3b621204c90751fe5d0d4543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Riff1: {fileID: 8300000, guid: 40e70d894e4398b4bb9b90bc2058a332, type: 3}
-  Riff2: {fileID: 8300000, guid: 5876fb9fe0267b64890cb543dd200f48, type: 3}
+  Riff1: {fileID: 8300000, guid: 63e5d30d9b6fdf34d923e41e45b12451, type: 3}
+  Riff2: {fileID: 8300000, guid: 9d0eee0d375245147b688feaec17bbbc, type: 3}
   SoundTrack: {fileID: 8300000, guid: 19a92531a5e72184e9f2c759a4f34b8d, type: 3}
   SteelCraft: {fileID: 8300000, guid: c5da7fe26a39b3d4eaed0e05293d3204, type: 3}
   AllExp:
