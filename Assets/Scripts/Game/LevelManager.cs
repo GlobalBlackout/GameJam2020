@@ -42,4 +42,9 @@ public class LevelManager : MonoBehaviour
 
         SceneManager.LoadScene("VictoryScene");
     }
+
+    public string GetCurrentLevel()
+    {
+        return _levelName;
+    }
 }
