@@ -11,27 +11,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Level 1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/Transiction/WinScene.unity
-    guid: d51f7a245436a484faa842947701bcec
-  - enabled: 1
-    path: Assets/Scenes/Transiction/GameOver.unity
-    guid: ce653809f3c3f4e41915eccccc740db0
-  - enabled: 1
-    path: Assets/Scenes/Transiction/VictoryScene.unity
-    guid: fc68388ea62e84a47b13339b4d07ae43
   - enabled: 0
-    path: Assets/Scenes/Levels/RepairLevel2.unity
-    guid: 9f24d4890334dda409f43a3e740eca85
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/Levels/RepairLevel3.unity
-    guid: aef11b6c128045544af30fdae3b6a94c
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/Levels/RepairLevel4.unity
-    guid: 8146c2d9e74110849abd34b272236e3a
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/Levels/RepairLevel1.unity
-    guid: e2f9f98b129feff4989642589dd12081
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Levels/Level 2.unity
     guid: 33891f9cd06bf414fb9f2a2a6680478f
@@ -44,4 +35,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Level 5.unity
     guid: 463cb58a4c04d944981b7f23023ac4cd
+  - enabled: 1
+    path: Assets/Scenes/Transiction/VictoryScene.unity
+    guid: fc68388ea62e84a47b13339b4d07ae43
+  - enabled: 1
+    path: Assets/Scenes/Transiction/WinScene.unity
+    guid: d51f7a245436a484faa842947701bcec
+  - enabled: 1
+    path: Assets/Scenes/Transiction/GameOver.unity
+    guid: ce653809f3c3f4e41915eccccc740db0
   m_configObjects: {}
