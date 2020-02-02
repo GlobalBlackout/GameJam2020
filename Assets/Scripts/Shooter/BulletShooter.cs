@@ -6,7 +6,7 @@ public class BulletShooter : MonoBehaviour
 {
     public GameObject BulletPrefab;
     [Header("Shooter")]
-    [Range(2f, 10)]
+    [Range(0f, 10)]
     public float TimeBetweenShoot = .1f;
 
     private float TimeLeft;
