@@ -50,8 +50,6 @@ public class SoundManager : MonoBehaviour
 
     public void PlayExplosion()
     {
-        StopAudioCLip();
-
         int n = Random.Range(0, AllExp.Length);
         ExplosionSource.PlayOneShot(AllExp[n]);
     }
@@ -59,13 +57,6 @@ public class SoundManager : MonoBehaviour
     public void PlaySteelCraft()
     {
         SteelCraftSource.PlayOneShot(SteelCraft);
-    }
-
-    public void StopAudioCLip()
-    {
-
-        //Riff1Source.Stop();
-        //Riff2Source.Stop();
     }
 
     public void PlayOneRiff()

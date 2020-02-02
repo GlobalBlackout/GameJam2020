@@ -894,12 +894,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5420824a3b621204c90751fe5d0d4543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Riff1: {fileID: 0}
-  Riff2: {fileID: 0}
+  Riff1: {fileID: 8300000, guid: 40e70d894e4398b4bb9b90bc2058a332, type: 3}
+  Riff2: {fileID: 8300000, guid: 5876fb9fe0267b64890cb543dd200f48, type: 3}
   SoundTrack: {fileID: 8300000, guid: 19a92531a5e72184e9f2c759a4f34b8d, type: 3}
-  SteelCraft: {fileID: 0}
+  SteelCraft: {fileID: 8300000, guid: c5da7fe26a39b3d4eaed0e05293d3204, type: 3}
   AllExp:
-  - {fileID: 8300000, guid: 19a92531a5e72184e9f2c759a4f34b8d, type: 3}
+  - {fileID: 8300000, guid: 943b83ca2548bf24ca91e2a3a3632f9e, type: 3}
+  - {fileID: 8300000, guid: 66b60987ba604fb4eb384db895499f57, type: 3}
+  - {fileID: 8300000, guid: 6c91ec0a19289dd489a8cd72e990661b, type: 3}
+  - {fileID: 8300000, guid: 87d5422a9b86db64dbe683b1a2105db1, type: 3}
+  - {fileID: 8300000, guid: 24f130888bbde54408f020bed106a8c1, type: 3}
+  - {fileID: 8300000, guid: 87fd8fe65e5e7d44c9ef6045104b6520, type: 3}
+  - {fileID: 8300000, guid: cb7e8826b8572d54185a256efc7b04e4, type: 3}
 --- !u!4 &1994069727
 Transform:
   m_ObjectHideFlags: 0
@@ -912,7 +918,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1994069728
 AudioSource:
@@ -924,7 +930,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 19a92531a5e72184e9f2c759a4f34b8d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: cb7e8826b8572d54185a256efc7b04e4, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
