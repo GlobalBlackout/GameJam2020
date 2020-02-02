@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public int BrickToLoose = 10;
     public float TimeTowin = 60;
 
+
     private static int _brickToLoose;
     private static float _timeTowin;
 

@@ -17,4 +17,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Transiction/GameOver.unity
     guid: ce653809f3c3f4e41915eccccc740db0
+  - enabled: 1
+    path: Assets/Scenes/Levels/RepairLevel2.unity
+    guid: 9f24d4890334dda409f43a3e740eca85
+  - enabled: 1
+    path: Assets/Scenes/Levels/RepairLevel3.unity
+    guid: aef11b6c128045544af30fdae3b6a94c
+  - enabled: 1
+    path: Assets/Scenes/Levels/RepairLevel4.unity
+    guid: 8146c2d9e74110849abd34b272236e3a
+  - enabled: 1
+    path: Assets/Scenes/Levels/RepairLevel1.unity
+    guid: e2f9f98b129feff4989642589dd12081
   m_configObjects: {}
