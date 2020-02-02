@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
     private static void TimerForShoot()
     {
         _timeTowin -= Time.deltaTime;
-        if (_timeTowin < 0)
+        if (_timeTowin < 50)
         {
             Win();
         }

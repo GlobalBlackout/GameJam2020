@@ -2,14 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEditor;
 
 public class LoadScene : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    private int level = 1;
+
     public float timer = 0f;
     public float LoadingTime = 3f;
+
+    
 
     // Update is called once per frame
     void Update()
@@ -19,11 +22,20 @@ public class LoadScene : MonoBehaviour
 
         Debug.Log(seconds);
 
-        if(seconds > LoadingTime)
-        {
-            SceneManager.LoadScene("RepairLevel" + level);
+        
 
-            level++;
+        
+
+        if (seconds > LoadingTime)
+        {
+            LevelLoad();
         }
+
+        
+    }
+
+     void LevelLoad()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
