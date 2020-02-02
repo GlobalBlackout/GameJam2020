@@ -20,7 +20,7 @@ public class GameOver : MonoBehaviour
 
     private void RestartOnClick()
     {
-        SceneManager.LoadScene("FinalGame");
+        SceneManager.LoadScene(FindObjectOfType<LevelManager>().LevelsName[0]);
     }
 
     private void MenuOnClick()

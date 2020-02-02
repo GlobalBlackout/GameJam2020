@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class StartMenu : MonoBehaviour
 {
-	// Start is called before the first frame update
 	public Button StartBtn;
     public Button QuitBtn;
 
@@ -19,14 +18,13 @@ public class StartMenu : MonoBehaviour
         QuitBtn.onClick.AddListener(QuitOnClick);
     }
 
-
     private void StartOnClick()
     {
-        SceneManager.LoadScene("Level 1");
+        SceneManager.LoadScene(FindObjectOfType<LevelManager>().LevelsName[0]);
     }
 
     private void QuitOnClick()
     {
-        SceneManager.LoadScene("StartMenu");
+        Application.Quit();
     }
 }

@@ -4,44 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/Transiction/StartMenu.unity
-    guid: 44c123bd80c83d1459d90c8aef0b0bc3
-  - enabled: 1
-    path: Assets/Scenes/Levels/Level 1.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/Scenes/Levels/Level 2.unity
-    guid: 33891f9cd06bf414fb9f2a2a6680478f
-  - enabled: 1
-    path: Assets/Scenes/Levels/Level 3.unity
-    guid: 57f044ee173eb414e8a400fa12908b88
-  - enabled: 1
-    path: Assets/Scenes/Levels/Level 4.unity
-    guid: 16b7283cd00f5b9428f577200a39184f
-  - enabled: 1
-    path: Assets/Scenes/Levels/Level 5.unity
-    guid: 463cb58a4c04d944981b7f23023ac4cd
-  - enabled: 1
-    path: Assets/Scenes/Transiction/VictoryScene.unity
-    guid: fc68388ea62e84a47b13339b4d07ae43
-  - enabled: 1
-    path: Assets/Scenes/Transiction/WinScene.unity
-    guid: d51f7a245436a484faa842947701bcec
-  - enabled: 1
-    path: Assets/Scenes/Transiction/GameOver.unity
-    guid: ce653809f3c3f4e41915eccccc740db0
+  m_Scenes: []
   m_configObjects: {}

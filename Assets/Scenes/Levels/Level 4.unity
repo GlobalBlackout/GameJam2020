@@ -12612,7 +12612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BrickToLoose: 5
-  TimeTowin: 60
+  TimeTowin: 5
 --- !u!4 &1505481969
 Transform:
   m_ObjectHideFlags: 0
