@@ -14,7 +14,6 @@ public class SpawnCube : MonoBehaviour
     public float DelaySpawn = 3;
 
     private Vector2 _mosePosition;
-    //public AudioClip SteelCraft;
     private float _timeLeft;
     private bool _brickInStorage = true;
 
@@ -26,11 +25,17 @@ public class SpawnCube : MonoBehaviour
 
     void Update()
     {
-        if(!_brickInStorage)
+        if (!_brickInStorage)
+        {
             TimerForPlaceBrick();
+            PlayerRange.enabled = false;
+        }
 
         if (_brickInStorage)
+        {
             SpawnBrick();
+            PlayerRange.enabled = true;
+        }
     }
 
     private void SpawnBrick()
