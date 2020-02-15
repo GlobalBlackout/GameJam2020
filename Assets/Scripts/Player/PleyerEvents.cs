@@ -10,13 +10,13 @@ public class PleyerEvents : MonoBehaviour
 
     private static float _timeTowin;
 
-    public Animator anim;
     public GameObject go;
+
+    private Animator anim;
 
     private void Start()
     {
         anim = go.GetComponent<Animator>();
-        _timeTowin = TimeStunn;
     }
 
     public void StunAnim()
@@ -41,6 +41,7 @@ public class PleyerEvents : MonoBehaviour
         {
             Stunned = true;
             StunAnim();
+
         }
     }
 
